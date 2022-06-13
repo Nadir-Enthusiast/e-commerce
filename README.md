@@ -1,1 +1,1 @@
-Sorry , this project is temporarily paused.
+E-Commerce website. In process of building
