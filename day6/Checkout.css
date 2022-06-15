@@ -1,0 +1,58 @@
+.checkout {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout-ad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout-title {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+.checkout-title:hover {
+    color: rgb(142, 0, 147);
+}
+
+@media screen and (max-width: 767px) {
+    .checkout {
+        padding: 14px;
+    }
+
+    .checkout-ad {
+        margin-bottom: 6px;
+    }
+
+    .checkout-title {
+        margin: 6px;
+        padding: 6px;
+    }
+
+    .checkout-ad {
+        width: 340px;
+    }
+
+    .checkout-left {
+        max-width: 170px;
+        float: left;
+    }
+
+    .checkout-right {
+        max-width: 170px;
+        float: right;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+}
