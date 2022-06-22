@@ -1,0 +1,40 @@
+.basic-info {
+    position: relative;
+    margin: 50px 0 50px 450px;
+    height: 400px;
+    width: 800px;
+    background: #ebebeb;
+}
+
+.img-container {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 350px;
+}
+
+.profile-picture {
+    max-height: 300px;
+}
+
+.profile-text-info {
+    position: relative;
+    float: right;
+    background-color: #d8d8d8;
+    width: 450px;
+}
+
+.profile-info-line {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #3d3d3d;
+    height: 50px;
+}
+
+.additional-info {
+    position: relative;
+    margin: 50px 0 50px 450px;
+    height: 400px;
+    width: 800px;
+    background: #ebebeb;
+}
