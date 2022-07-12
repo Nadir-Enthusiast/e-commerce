@@ -1,0 +1,45 @@
+.payment {
+    background-color: white;
+}
+
+.payment-container > h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    background-color: rgb(211, 211, 211);
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-container > h1 a {
+    text-decoration: none;
+}
+
+.payment-section {
+    display: flex;
+    padding: 20px;
+    margin: 0 20p;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-title {
+    flex: 0.2;
+}
+
+.payment-details, .payment-items, .payment-address {
+    flex: 0.8;
+}
+
+.payment-details > form {
+    max-width: 400px;
+    height: 80px;
+}
+
+.payment-details > form > div > button {
+    height: 30px;
+    margin-top: 8px;
+    width: 120px;
+    background-color: rgb(215, 215, 48);
+    border: 1px solid;
+    border-color: rgb(255, 255, 103) rgb(224, 224, 45) rgb(176, 176, 26);
+    color: #111;
+}

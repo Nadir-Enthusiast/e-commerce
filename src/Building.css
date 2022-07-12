@@ -1,0 +1,9 @@
+.building > h1 {
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.building > p {
+    font-size: 28px;
+    padding-top: 16px;
+}
