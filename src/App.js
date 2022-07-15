@@ -30,8 +30,14 @@ function App() {
     })
   }, [])
 
+  var preloader = document.getElementById('loader');
+  function preLoaderHandler(){
+      preloader.style.display = 'none';
+  }
+
   return (
     <Router>
+      {preLoaderHandler()}
       <div className="App">
         <Routes>
           <Route path="/login" element={<Login />}></Route>
