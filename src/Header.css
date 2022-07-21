@@ -326,11 +326,10 @@
     position: relative;
 }
 
-#first 
-#second 
-#third {
+.header > .homeSidebar > #first, 
+.header > .homeSidebar > #second, 
+.header > .homeSidebar > #third {
     height: fit-content;
-    display: none;
 }
 
 .dropdown-sidebarOption {

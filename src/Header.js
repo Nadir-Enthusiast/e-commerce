@@ -46,7 +46,7 @@ function Header() {
             <button className='sidebar-dropdownBtn' onClick={event => setDropdown(event, "first")}>
                 About &#9662;
             </button>
-            <div id='first' className="dropdown-container">
+            <div id='first' className="dropdown-container" style={{display: 'none'}}>
                 <a href='/building' className='dropdown-sidebarOption'>General Info</a>
                 <a href='/building' className='dropdown-sidebarOption'>History</a>
                 <a href='/building' className='dropdown-sidebarOption'>Board of Directors</a>
@@ -59,7 +59,7 @@ function Header() {
             <button className='sidebar-dropdownBtn' onClick={event => setDropdown(event, "second")}>
                 Delivery &#9662;
             </button>
-            <div id='second' className="dropdown-container">
+            <div id='second' className="dropdown-container" style={{display: 'none'}}>
                 <a href='/building' className='dropdown-sidebarOption'>Free Delivery</a>
                 <a href='/building' className='dropdown-sidebarOption'>Paid Delivery</a>
             </div>
@@ -67,7 +67,7 @@ function Header() {
             <button className='sidebar-dropdownBtn' onClick={event => setDropdown(event, "third")}>
                 Products &#9662;
             </button>
-            <div id='third' className="dropdown-container">
+            <div id='third' className="dropdown-container" style={{display: 'none'}}>
                 <a href='/building' className='dropdown-sidebarOption'>Tech</a>
                 <a href='/building' className='dropdown-sidebarOption'>Clothes</a>
                 <a href='/building' className='dropdown-sidebarOption'>Books</a>
@@ -79,7 +79,7 @@ function Header() {
             <button className='sidebar-dropdownBtn' onClick={event => setDropdown(event, "4th")}>
                 Customer Service &#9662;
             </button>
-            <div id='4th' className="dropdown-container">
+            <div id='4th' className="dropdown-container" style={{display: 'none'}}>
                 <a href='/building' className='dropdown-sidebarOption'>FAQ</a>
                 <a href='/building' className='dropdown-sidebarOption'>Report</a>
                 <a href='/building' className='dropdown-sidebarOption'>Feedback</a>
@@ -90,7 +90,7 @@ function Header() {
             <button className='sidebar-dropdownBtn' onClick={event => setDropdown(event, "5th")}>
                 Contact &#9662;
             </button>
-            <div id='5th' className="dropdown-container">
+            <div id='5th' className="dropdown-container" style={{display: 'none'}}>
                 <a href='/building' className='dropdown-sidebarOption'>Email</a>
                 <a href='/building' className='dropdown-sidebarOption'>Mail</a>
                 <a href='/building' className='dropdown-sidebarOption'>24/7 hotline</a>

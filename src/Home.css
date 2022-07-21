@@ -3,21 +3,25 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1500px;
+    width: 100%;
+    background-color: #ebebeb;
+    margin: 0;
 }
 
-.home-row {
+.home > .home-container > .home-row {
     display: flex;
+    margin-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.home-container {
+.home > .home-container {
     width: 90%;
-    margin-bottom: -150px;
+    top: 15px;
+    position: relative;
 }
 
-.home-banner {
+.home > .home-container > .home-banner {
     width: 1300px;
     margin-top: 30px;
     object-fit: contain;
@@ -31,7 +35,7 @@
         max-width: 767px;
     }
 
-    .home-banner {
+    .home > .home-container > .home-banner {
         width: 340px;
     }
 }

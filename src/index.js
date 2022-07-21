@@ -6,6 +6,7 @@ import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

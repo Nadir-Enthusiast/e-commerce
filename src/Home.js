@@ -1,17 +1,46 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Carousel from 'react-bootstrap/Carousel';
 import "./Home.css"
 import Product from "./Product"
 
+const data = [
+  {
+   image: require('./pics/welcome.jpg')
+  },
+  {
+   image:require('./pics/login.jpg')
+  },
+  {
+   image:require('./pics/cart.jpg')
+  },
+  {
+   image:require('./pics/buy.jpg')
+  } 
+]
+
 function Home() {
   
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
     <div className='home'>
         <div className="home-container">    
-            <img
-                className='home-banner'
-                src='https://birchoffice.com/wp-content/uploads/2020/10/ecommerce-web-development.jpg'
-                alt=''
-            />
+            <Carousel style={{height: '500px', width: '900px', margin: '0 auto 25px auto'}} activeIndex={index} onSelect={handleSelect}>
+               {data.map((slide, i) => {
+                return (
+                  <Carousel.Item>        
+                    <img
+                      className="d-block w-100"
+                      src={slide.image}
+                      alt="slider image"
+                    />
+                  </Carousel.Item>
+                )
+                })}
+            </Carousel>
             
             <div className="home-row">
                 <Product 

@@ -7,7 +7,7 @@ import {useStateValue} from "./StateProvider"
 import {Elements} from "@stripe/react-stripe-js"
 import {loadStripe} from "@stripe/stripe-js";
 
-const promise = loadStripe("load")
+const promise = loadStripe(`${process.env.REACT_APP_STRIPE_LOAD}`)
 
 function App() {
   const [{cart}, dispatch] = useStateValue();
@@ -37,8 +37,8 @@ function App() {
 
   return (
     <Router>
-      {preLoaderHandler()}
       <div className="App">
+        {preLoaderHandler()}
         <Routes>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<Main />}></Route>
