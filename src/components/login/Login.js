@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import { db, auth, analytics } from "./firebase"
+import { db, auth, analytics } from "../../firebase"
 import {doc, setDoc} from "firebase/firestore"
-/* import { TextInput } from "react-native"; */
 import "./Login.css"
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../StateProvider";
 
 function Login() {
   const history = useNavigate();

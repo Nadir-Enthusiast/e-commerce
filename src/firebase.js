@@ -12,7 +12,6 @@ const firebaseConfig = {
   storageBucket: "e-commerce1-ae557.appspot.com",
   messagingSenderId: `${process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID}`,
   appId: `${process.env.REACT_APP_FIREBASE_APP_ID}`,
-  measurementId: `${REACT_APP_FIREBASE_MEASURMENT_ID}`
 };
 
 const app = initializeApp(firebaseConfig);

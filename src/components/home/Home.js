@@ -1,20 +1,20 @@
 import React,{useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import "./Home.css"
-import Product from "./Product"
+import Product from "../product/Product"
 
 const data = [
   {
-   image: require('./pics/welcome.jpg')
+   image: require('../../pics/welcome.jpg')
   },
   {
-   image:require('./pics/login.jpg')
+   image:require('../../pics/login.jpg')
   },
   {
-   image:require('./pics/cart.jpg')
+   image:require('../../pics/cart.jpg')
   },
   {
-   image:require('./pics/buy.jpg')
+   image:require('../../pics/buy.jpg')
   } 
 ]
 

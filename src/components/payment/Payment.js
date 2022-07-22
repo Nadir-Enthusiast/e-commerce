@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
-import CheckoutProduct from './CheckoutProduct';
+import CheckoutProduct from '../checkproduct/CheckoutProduct';
 import "./Payment.css";
-import {useStateValue} from "./StateProvider";
-import { getTotalPrice } from "./reducer";
+import {useStateValue} from "../../StateProvider";
+import { getTotalPrice } from "../../reducer";
 import {Link, useNavigate} from "react-router-dom";
 import CurrencyFormat from "react-currency-format";
 import {CardElement, useStripe, useElements} from "@stripe/react-stripe-js";
-import axios from "./axios";
-import {db} from "./firebase";
+import axios from "../../axios";
+import {db} from "../../firebase";
  
 function Payment() {
   const [{cart, user}, dispatch] = useStateValue();

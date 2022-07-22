@@ -1,8 +1,8 @@
 import "./Subtotal.css"
 import React from 'react'
 import CurrencyFormat from "react-currency-format";
-import { useStateValue } from "./StateProvider";
-import { getTotalPrice } from "./reducer";
+import { useStateValue } from "../../StateProvider";
+import { getTotalPrice } from "../../reducer";
 import { useNavigate } from "react-router-dom";
 
 function Subtotal() {

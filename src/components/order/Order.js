@@ -1,7 +1,7 @@
 import "./Order.css"
 import React from 'react'
 import moment from "moment"
-import CheckoutProduct from "./CheckoutProduct"
+import CheckoutProduct from "../checkproduct/CheckoutProduct"
 import CurrencyFormat from "react-currency-format"
 
 function Order({order}) {
