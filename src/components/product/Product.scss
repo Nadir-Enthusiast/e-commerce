@@ -1,0 +1,64 @@
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto 3vh;
+    padding: 2vh;
+    height: 90%;
+    background-color: rgba(246, 246, 246, 0.8);
+    border-radius: 2rem;
+    border: 0.2vh solid #dbdbdb;
+
+    .product-info {
+        width: 100%;
+        margin-bottom: 0.5vh;
+
+        h3 {
+            font-size: 140%;
+        }
+
+        p {
+            font-size: 80%;
+            width: 100%;
+            word-wrap: normal;
+            margin-bottom: 5%;
+        }
+
+        .product-rating {
+            display: flex;
+            width: fit-content;
+        }
+
+        .product-price {
+
+            small {
+                font-size: 150%;
+            }
+
+            strong {
+                font-size: 175%;
+            }
+        }
+    }
+
+    img {
+        height: 40%;
+        width: 40%;
+        object-fit: contain;
+        margin-bottom: 0.5vh;
+    }
+
+    button {
+        height: 5vh;
+        width: auto;
+        padding-left: 1vh;
+        padding-right: 1vh;
+        background-color: rgb(215, 215, 48);
+        border: 1px solid;
+        border-color: rgb(255, 255, 103) rgb(224, 224, 45) rgb(176, 176, 26);
+        color: #111;
+    }
+
+
+}
