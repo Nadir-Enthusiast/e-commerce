@@ -1,8 +1,8 @@
 import React from "react";
-import "./Product.css";
+import "./Product.scss"
 import { useStateValue } from "../../StateProvider";
 
-function Product({ id, title, image, price, rating }) {
+function Product({ id, title, image, description, price, rating, wid}) {
   const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
@@ -13,6 +13,7 @@ function Product({ id, title, image, price, rating }) {
         id: id,
         title: title,
         image: image,
+        description: description,
         price: price,
         rating: rating,
       },
@@ -20,9 +21,10 @@ function Product({ id, title, image, price, rating }) {
   };
 
   return (
-    <div id={id} className="product">
+    <div id={id} className="product" style={{width: `${wid}`}}>
       <div className="product-info">
-        <p>{title}</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <p className="product-price">
           <small>$</small>
           <strong>{price}</strong>
@@ -31,14 +33,13 @@ function Product({ id, title, image, price, rating }) {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <p>🌟</p>
+              <p>⭐</p>
             ))}
         </div>
+        <button className="add-to-cart-btn" onClick={ addToCart }>Add to Cart</button>
       </div>
 
       <img src={image} alt="" />
-
-      <button className="add-to-cart-btn" onClick={ addToCart }>Add to Cart</button>
     </div>
   );
 }
