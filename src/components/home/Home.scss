@@ -8,7 +8,7 @@
 
     .intro-container {
         margin-top: 5vh;
-        margin-left: 5vw;
+        margin-left: 8vw;
 
         .intro {
             height: 90vh;
@@ -53,24 +53,103 @@
                 }
             }
 
+            .ii4  {
+                background: linear-gradient(to top right, #7300ff 10%, #003cff 15%, #24ff18 30%, #ffee00 60%);
+
+                h2 {
+                    color: #1eff00;
+                    text-shadow: 0.4vh 0.4vh 0.5vh #000000;
+                }
+
+                p {
+                    color: #ffffff;
+                    text-shadow: 0.6vh 0.6vh 0.8vh #000000;
+                }
+            }
+
             .ii5 {
                 grid-area: 2/3/4/5;
                 background: url("../../pics/promotion.jpeg");
                 background-repeat: no-repeat;
                 background-size: cover;
 
+                .background {
+                    .svg-icon {
+                        position: relative;
+                        height: 9vh;
+
+                        &:nth-child(1) {
+                            left: 8vh;
+                            top: 17vh;
+                        }
+
+                        &:nth-child(2) {
+                            left: 16vh;
+                            top: 32vh;
+                        }
+
+                        &:nth-child(3) {
+                            left: 20vh;
+                            top: 16vh;
+                        }
+
+                        &:nth-child(4) {
+                            left: 24vh;
+                            top: 32vh;
+                        }
+
+                        &:nth-child(5) {
+                            left: 30vh;
+                            top: 17vh;
+                        }
+                    }
+                }
+
                 h2 {
+                    color: #0000ff;
+                    text-shadow: 2.5vh 2.5vh 4.5vh #b800fb, -2.5vh -2.5vh 4.5vh #b800fb, 2.5vh -2.5vh 4.5vh #b800fb, -2.5vh 2.5vh 4.5vh #b800fb;
                     width: 60%;
                     position: relative;
                     top: 25%;
                     left: 25%;
                 }
             }
+
+            .ii6 {
+                background: linear-gradient(to top right, #00ffea 10%, #0084ff 15%, #5900ff 30%, #b700ff 60%);
+                background: radial-gradient(ellipse at top, #00ffea, transparent),
+                            radial-gradient(ellipse at right, #0084ff, transparent),
+                            radial-gradient(ellipse at bottom, #5900ff, transparent),
+                            radial-gradient(ellipse at left, #b700ff, transparent);
+
+                h2 {
+                    color: #eaff00;
+                    text-shadow: 0.4vh 0.4vh 0.5vh #000000;
+                }
+
+                p {
+                    color: #ffffff;
+                    text-shadow: 0.6vh 0.6vh 0.8vh #000000;
+                }
+            }
         }
     }
 
     .trending-container {
-        height: 50vh;
+        height: 54vh;
+
+        .title {
+            padding: 2vh;
+            background: url("../../pics/star.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            h1 {
+                color: white;
+            }
+        }
 
         .home-row {
             display: flex;
@@ -78,6 +157,58 @@
             width: 99vw;
             flex-wrap: nowrap;
             background: #c7c7c7;
+
+            .product {
+                height: 34vh;
+            }
+        }
+    }
+
+    .mc-wrapper {
+
+        height: 100vh;
+
+        .mc-title {
+            background: url("../../pics/space.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            justify-content: center;
+
+            h1 {
+                color: white;
+                padding: 2vh;
+            }
+        }
+
+        .main-content {
+            margin: 3.5vh auto;
+            height: 90vh;
+            width: 85%;
+            display: grid;
+            grid-template-columns: 60vw 20vw;
+            grid-template-rows: 40vh 40vh;
+            gap: 2vh;
+    
+            .product {
+                &:nth-child(1) {
+                    grid-row: 1/3;
+                    height: 97%;
+    
+                    .product-info {
+                        height: 97%;
+    
+                        h3 {
+                            font-size: 10vh;
+                        }
+    
+                        p {
+                            font-size: 160%;
+                        }
+                    }
+                }
+            }
         }
     }
 
