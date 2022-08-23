@@ -28,11 +28,11 @@ function Orders() {
 
   return (
     <div className="orders">
-        <h1>Orders page</h1>
+        <h1>Your orders</h1>
         <div className="orders-order">
-            {orders?.map(order => (
+            { orders ? orders.map(order => (
                 <Order order={order} />
-            ))}
+            )) : <h2>You don't have any orders.</h2>}
         </div>
     </div>
   )

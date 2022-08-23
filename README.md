@@ -2,9 +2,17 @@
 
 ![Necommerce Website](src/pics/main.jpg)
 
- ## Sign up, buy products and make REAL payments.
+ ## Buy and make REAL payments.
 
- Please note. For test payments use card 4242 4242 4242 4242 date 04/24 cvc 242 ZIP 42424
+![Payment](src/pics/payment.jpg)
+
+ For test payments use card 4242 4242 4242 4242 date 04/24 cvc 242 ZIP 42424.
+
+ ## View your orders
+
+ ![Orders](src/pics/info1.jpg)
+
+ At the top right corner you can see your order's id.
  
  ## Available Scripts
 
