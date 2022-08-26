@@ -7,8 +7,6 @@
     margin: 0 auto;
 
     .intro-container {
-        margin-top: 5vh;
-        margin-left: 8vw;
 
         .intro {
             height: 90vh;
@@ -57,11 +55,13 @@
                 background: linear-gradient(to top right, #7300ff 10%, #003cff 15%, #24ff18 30%, #ffee00 60%);
 
                 h2 {
+                    font-size: 4vh;
                     color: #1eff00;
                     text-shadow: 0.4vh 0.4vh 0.5vh #000000;
                 }
 
                 p {
+                    font-size: 2vh;
                     color: #ffffff;
                     text-shadow: 0.6vh 0.6vh 0.8vh #000000;
                 }
@@ -168,22 +168,7 @@
 
         height: 100vh;
 
-        .mc-title {
-            background: url("../../pics/space.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            justify-content: center;
-
-            h1 {
-                color: white;
-                padding: 2vh;
-            }
-        }
-
         .main-content {
-            margin: 3.5vh auto;
             height: 90vh;
             width: 85%;
             display: grid;
@@ -219,7 +204,6 @@
         height: 80vh;
 
         .carousel {
-            margin: 0 auto;
             height: 70vh;
             width: 70vw;
         }
@@ -231,4 +215,149 @@
         height: 70vh;
         width: 70vw;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .home {
+        // INTRO MOBILE (SECTION 1)
+        .intro-container {
+            margin-top: 2.5vh;
+            margin-left: 3vw;
+            height: 20vh;
+
+            .intro {
+                grid-template-columns: 21vw 21vw 21vw 21vw;
+                grid-template-rows: 5vh 5vh 5vh;
+                gap: 1.5vh;
+
+                .ii3 {
+                    h2 {
+                        font-size: 0.5vh;
+                        text-shadow: 0.2vh 0.2vh 0.38vh rgb(98, 0, 255);
+                    }
+    
+                    p {
+                        font-size: 0.4vh;
+                    }
+                }
+
+                .ii4, .ii6  {
+
+                    h2 {
+                        font-size: 1.5vh;
+                        text-shadow: 0.2vh 0.2vh 0.28vh #000000;
+                    }
+    
+                    p {
+                        font-size: 0.5vh;
+                        color: #ffffff;
+                        text-shadow: 0.6vh 0.6vh 0.8vh #000000;
+                    }
+                }
+
+                .ii5 {
+                    .background {
+                        .svg-icon {
+                            position: relative;
+                            height: 2vh;
+    
+                            &:nth-child(1) {
+                                left: 3vh;
+                                top: 3vh;
+                            }
+    
+                            &:nth-child(2) {
+                                left: 4vh;
+                                top: 5vh;
+                            }
+    
+                            &:nth-child(3) {
+                                left: 5.5vh;
+                                top: 2vh;
+                            }
+    
+                            &:nth-child(4) {
+                                left: 7vh;
+                                top: 5vh;
+                            }
+    
+                            &:nth-child(5) {
+                                left: 8vh;
+                                top: 3vh;
+                            }
+                        }
+                    }
+
+                    h2 {
+                        font-size: 1vh;
+                        color: #0000ff;
+                        text-shadow: 1.5vh 1.5vh 2.5vh #b800fb, -1.5vh -1.5vh 2.5vh #b800fb, 1.5vh -1.5vh 2.5vh #b800fb, -1.5vh 1.5vh 2.5vh #b800fb;
+                        width: 60%;
+                        position: relative;
+                        top: 25%;
+                        left: 25%;
+                    }
+                }
+            }
+        }
+        // TRENDING MOBILE (SECTION 2)
+        .trending-container {
+            height: 20vh;
+
+            .title {
+                height: 3vh;
+                padding: 1vh;
+
+                h1 {
+                    font-size: 1vh;
+                }
+            }
+    
+            .home-row {
+                height: 15vh;
+    
+                .product {
+                    height: 12vh;
+                }
+            }
+        }
+    }
+
+    .parallax-heading {
+        h1 {
+            font-size: 1vh;
+        }
+    }
+}
+
+// Containers
+
+.median-margin {
+    margin-top: 5vh;
+    margin-left: 8vw;
+}
+
+.median-padding-white {
+    padding: 2vh;
+
+    h1 {
+        color: white;
+    }
+}
+
+// Background pics
+.stars-background {
+    background: url("../../pics/star.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.space-background {
+    background: url("../../pics/space.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
