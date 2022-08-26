@@ -40,7 +40,7 @@ function Home() {
   return (
     <div className='home'>
       <div className="intro-container">
-        <div className="intro">
+        <div className="intro median-margin">
           <div class="intro-item ii1"></div>
           <div class="intro-item ii2"></div>
           <div class="intro-item ii3">
@@ -88,7 +88,7 @@ function Home() {
         </div>
       </div>
       <div className="trending-container">          
-        <div className="title">
+        <div className="parallax-heading stars-background median-padding-white">
           <h1>Top Trending products</h1>
         </div>
         <div className="home-row">
@@ -99,16 +99,16 @@ function Home() {
             image={sm1}
             price={129.99}
             rating={5}
-            wid="22vw"
+            wid="22%"
           />
           <Product 
             id="100001"
             title="HP Chromebook"
             description="Chrome OS. Intel Pentium Silver, UHD Graphics4 GB memory, diagonal HD touch display"
-            image={bck}
+            image={lp1}
             price={269.99}
             rating={4}
-            wid="22vw"
+            wid="22%"
           />
           <Product 
             id="100002"
@@ -131,10 +131,10 @@ function Home() {
         </div>
       </div>
       <div className="mc-wrapper">
-        <div className="mc-title">
+        <div className="parallax-heading space-background median-padding-white">
           <h1>Featured</h1>
         </div>
-        <div className="main-content">
+        <div className="main-content median-margin">
           {/* mci - Main Content Item */}
           <Product 
             className="mc-item mci1" 
@@ -168,7 +168,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="info-container">
+      <div className="info-container median-margin">
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {data.map((slide, i) => {
             return (
