@@ -1,0 +1,293 @@
+.header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(100, 122, 167);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .header-search-container {
+        display: flex;
+        flex: 1;
+
+        a {
+            .header-logo {
+                width: 60px;
+                object-fit: contain;
+                float: left;
+                margin: 0 10px;
+                margin-top: 0;
+            }
+        }
+
+        .header-search {
+            float: right;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            border-radius: 24px;
+
+            .header-searchInput {
+                height: 50%;
+                padding: 10px;
+                width: 100%;
+            }
+
+            .header-searchIcon {
+                padding: 4px;
+                height: 50%;
+                width: 5%;
+                background-color: gold;
+            }
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            .header-option {
+                display: flex;
+                flex-direction: column;
+                margin : 0 10px;
+                color: rgb(63, 0, 115);
+
+                .header-optionLine-one {
+                    font-size: 60%;
+                }
+                
+                .header-optionLine-two {
+                    font-size: 100%;
+                    font-weight: 800;
+                }
+            }
+
+            .header-optionCart {
+                display: flex;
+                align-items: center;
+                color: rgb(63, 0, 115);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .open-menu-btn {
+        display: flex;
+        padding: 10px 15px;
+    }
+}
+
+/* MOBILE DEVICES */
+
+@media screen and (max-width: 767px) {
+    .header {
+        width: 100vw;
+        height: 14vh;
+        flex-direction: column;
+
+        .menu-container {
+            position: relative;
+            right: 40%;
+            top: 50%;
+
+            .open-menu-btn {
+                margin: 0;
+                padding: 15px;
+                display: flex;
+                height: 60px;
+                width: 75px;
+
+                &:hover {
+                  color: white;
+                  background-color: transparent;
+                }
+
+                .icon-menu-header {
+                    font-size: 22px;
+                    position: relative;
+                    float: left;
+                }
+
+                .text-menu-header {
+                    position: relative;
+                    float: right;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .header-search-container {
+            position: relative;
+            top: -4vh;
+    
+            a {
+                .header-logo {
+                    float: left;
+                    width: 35px;
+                    margin: 0 10px;
+                }
+            }
+
+            .header-search {
+                .header-searchInput {
+                    float: right;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    bottom: 0.5vh;
+                }
+            
+                .header-searchIcon {
+                    height: 100%;
+                    position: relative;
+                    bottom: 0.5vh;
+                }
+            }
+        }
+
+        .header-nav {
+            position: relative;
+            bottom: 20%;
+            left: 10%;
+            width: 70vw;
+    
+            a {
+                .header-option {
+                    margin: 0 0.8vh;
+                
+                    .header-optionLine-one {
+                        font-size: 1vh;
+                    }
+                    
+                    .header-optionLine-two {
+                        font-size: 1.6vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: rgb(61, 61, 76);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  a {
+    padding: 10px 8px 10px 32px;
+    color: #a9a9a9;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: #000000;
+      background-color: #ffe600;
+    }
+  }
+
+  .sidebar-elementSeparator {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #21213f;
+  }
+
+  .close-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 5vh;
+    margin-left: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(44, 0, 81);
+    padding: 10px 15px;
+    border: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 254, 170);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(174, 0, 255);
+}
+
+.open-menu-btn {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(44, 0, 81);
+  border: none;
+}
+
+.open-menu-btn:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.close-menu-btn:hover {
+  color: #ff0000;
+  background-color: transparent;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.active {
+    background-color: #4e2f7a;
+    color: #ffffff;
+}
+
+.sidebar-dropdownBtn {
+  padding: 10px 8px 10px 32px;
+  border: none;
+  font-size: 36px;
+  color: #a9a9a9;
+  background: rgb(61, 61, 76);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a {
+    font-size: 24px;
+    background-color: #ffffff;
+}
+
+.sidebar-dropdownBtn:hover {
+    color: #000000;
+}
+
+.dropdown-container {
+    border-top: 1px solid #9a9a9a;
+    position: relative;
+}
+
+.header > .homeSidebar > #first, 
+.header > .homeSidebar > #second, 
+.header > .homeSidebar > #third {
+    height: fit-content;
+}
+
+.dropdown-sidebarOption {
+    border-bottom: 1px solid #8e8e8e;
+}
