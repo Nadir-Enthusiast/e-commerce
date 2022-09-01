@@ -330,11 +330,16 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
+    width: 84vw;
 
     .carousel {
-        height: 50vh;
-        width: 50vw;
+        height: 42vh;
+        width: 48vw;
     }
+}
+
+.small-margin {
+    margin-left: 4vw;
 }
 
 .median-margin {
