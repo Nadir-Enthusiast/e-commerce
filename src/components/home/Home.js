@@ -181,8 +181,14 @@ function Home() {
             )
           })}
         </Carousel>
-        <div className="side-box">
-
+        <div className="side-box small-margin">
+          <h1>About</h1>
+          <h2>Login</h2>
+          <p>Sign up by providing your e-mail and making a password. If you already have an account, sign in.</p>
+          <h2>Make purchases</h2>
+          <p>To buy something, find your desired product's "Add to cart" button. Once you added everything you need, go to cart section by clicking cart icon on top right corner. After, click proceed to checkout, where you can view your orders and provie card information. When you finish, you'l' be able to view your orders.</p>
+          <h2>Info for testers</h2>
+          <p>When providing card information for credit card use 4242 4242 4242 4242, date 04/24 cvc 242 ZIP 42424.</p>
         </div>
       </div>
     </div>
